@@ -51,7 +51,7 @@ const Index = (props) => {
                   <div className="col text-right">
                     <div className="dropdown">
                       <select
-                        class="btn btn-secondary dropdown-toggle btn-sm "
+                        className="btn btn-secondary dropdown-toggle btn-sm "
                         aria-label="Default select example"
                       >
                         <option className="dropdown-item " selected>
@@ -123,7 +123,7 @@ const Index = (props) => {
                   <div className="col text-right">
                     <div className="dropdown">
                       <select
-                        class="btn btn-secondary dropdown-toggle btn-sm "
+                        className="btn btn-secondary dropdown-toggle btn-sm "
                         aria-label="Default select example"
                       >
                         <option className="dropdown-item " selected>
@@ -169,7 +169,7 @@ const Index = (props) => {
                   <div className="col text-right">
                     <div className="dropdown">
                       <select
-                        class="btn btn-secondary dropdown-toggle btn-sm "
+                        className="btn btn-secondary dropdown-toggle btn-sm "
                         aria-label="Default select example"
                       >
                         <option className="dropdown-item " selected>
@@ -248,7 +248,7 @@ const Index = (props) => {
                   <div className="col text-right">
                     <div className="dropdown">
                       <select
-                        class="btn btn-secondary dropdown-toggle btn-sm "
+                        className="btn btn-secondary dropdown-toggle btn-sm "
                         aria-label="Default select example"
                       >
                         <option className="dropdown-item " selected>
@@ -290,7 +290,7 @@ const Index = (props) => {
                   <div className="col text-right">
                     <div className="dropdown">
                       <select
-                        class="btn btn-secondary dropdown-toggle btn-sm "
+                        className="btn btn-secondary dropdown-toggle btn-sm "
                         aria-label="Default select example"
                       >
                         <option className="dropdown-item " selected>

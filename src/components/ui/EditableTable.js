@@ -112,10 +112,10 @@ function EditableTable() {
                 setIsEditing(true);
               }}
             >
-              <i class="bx bx-message-square-edit"></i> Edit
+              <i className="bx bx-message-square-edit"></i> Edit
             </Button>
             <Button className="" color="primary" size="sm" type="submite">
-              <i class="bx bx-file-blank"></i> Save
+              <i className="bx bx-file-blank"></i> Save
             </Button>
           </div>
         );
@@ -163,7 +163,7 @@ function EditableTable() {
             className="table w-100 align-items-center table-flush mt-5"
           ></Table>
           <Button className="mx-4 mb-5" size="sm" onClick={addNewRow}>
-            <i class="bx bx-plus-medical fs-1"></i> New Row
+            <i className="bx bx-plus-medical fs-1"></i> New Row
           </Button>
         </Form>
       </header>

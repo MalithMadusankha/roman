@@ -30,9 +30,9 @@ const Welcome = () => {
               <div className="mt-5">
                 <Link
                   className="h1 placeholder-glow text-white"
-                  to="auth/login"
+                  to="/auth/login"
                 >
-                  <i class="bx bx-right-arrow-circle bx-fade-left text-white"></i>{" "}
+                  <i className="bx bx-right-arrow-circle bx-fade-left text-white"></i>{" "}
                   Continue
                 </Link>
               </div>

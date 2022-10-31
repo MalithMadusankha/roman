@@ -5,16 +5,13 @@ import {
   NavItem,
   NavLink,
   Card,
-  Input,
   Col,
   Pagination,
   PaginationItem,
   PaginationLink,
-  Table,
   Container,
   Row,
   Nav,
-  CardBody,
 } from "reactstrap";
 import classnames from "classnames";
 // core components
@@ -25,11 +22,11 @@ import ImageCard from "components/ui/ImageCard";
 
 const Membership = () => {
   const [activeTab, setActiveTab] = useState("1");
-  const [members, setMembers] = useState([
-    { type: "new", name: "malith", status: "pending" },
-    { type: "new", name: "janith", status: "complete" },
-    { type: "new", name: "malith", status: "janith" },
-  ]);
+  // const [members, setMembers] = useState([
+  //   { type: "new", name: "malith", status: "pending" },
+  //   { type: "new", name: "janith", status: "complete" },
+  //   { type: "new", name: "malith", status: "janith" },
+  // ]);
   const toggle = (tab) => {
     if (activeTab !== tab) {
       setActiveTab(tab);
@@ -85,7 +82,7 @@ const Membership = () => {
                         <div className="d-flex flex-row-reverse">
                           <div className="dropdown mx-2">
                             <select
-                              class="btn btn-primary dropdown-toggle btn-sm "
+                              className="btn btn-primary dropdown-toggle btn-sm "
                               aria-label="Default select example"
                             >
                               <option
@@ -116,7 +113,7 @@ const Membership = () => {
                           </div>
                           <div className="dropdown mx-2">
                             <select
-                              class="btn btn-info dropdown-toggle btn-sm "
+                              className="btn btn-info dropdown-toggle btn-sm "
                               aria-label="Default select example"
                             >
                               <option

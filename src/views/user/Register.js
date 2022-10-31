@@ -115,7 +115,7 @@ const Register = () => {
                   <InputGroup className="input-group-alternative">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText className="bg-translucent-info">
-                        <i class="bx bxs-key text-white fs-5"></i>
+                        <i className="bx bxs-key text-white fs-5"></i>
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
@@ -127,7 +127,7 @@ const Register = () => {
                 </FormGroup>
                 <div className="text-center">
                   <Link className="text-secondary text-sm">
-                    <i class="bx bx-key bx-fade-left"></i> resend code
+                    <i className="bx bx-key bx-fade-left"></i> resend code
                   </Link>
                 </div>
                 <div className="text-center">
