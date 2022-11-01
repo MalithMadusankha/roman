@@ -15,11 +15,11 @@ import {
   Row,
   Col,
 } from "reactstrap";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [isSlide, setIsSlide] = useState(false);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const onSucces = () => {
     console.log("slide");
     setIsSlide(true);
@@ -68,7 +68,12 @@ const Login = () => {
                   <SlidingButton onSucces={onSucces} isSlide={isSlide} />
                 </div>
                 <div className="text-center">
-                  <Button className="my-4" color="primary" type="button">
+                  <Button
+                    className="my-4"
+                    color="primary"
+                    type="button"
+                    onClick={onSucces}
+                  >
                     Continue
                   </Button>
                 </div>
@@ -106,9 +111,7 @@ const Login = () => {
                     className="my-4"
                     color="primary"
                     type="button"
-                    onClick={() => {
-                      window.location = "/admin/index";
-                    }}
+                    onClick={() => navigate("/admin/index")}
                   >
                     Sign In
                   </Button>

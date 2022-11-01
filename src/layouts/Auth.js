@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, Route, Switch, Redirect } from "react-router-dom";
+import { useLocation, Route, Routes, Navigate, Outlet } from "react-router-dom";
 // reactstrap components
 import { Container, Row } from "reactstrap";
 
@@ -35,21 +35,21 @@ const Auth = (props) => {
     mainContent.current.scrollTop = 0;
   }, [location]);
 
-  const getRoutes = (routes) => {
-    return routes.map((prop, key) => {
-      if (prop.layout === "/auth") {
-        return (
-          <Route
-            path={prop.layout + prop.path}
-            component={prop.component}
-            key={key}
-          />
-        );
-      } else {
-        return null;
-      }
-    });
-  };
+  // const getRoutes = (routes) => {
+  //   return routes.map((prop, key) => {
+  //     if (prop.layout === "/auth") {
+  //       return (
+  //         <Route
+  //           path={prop.layout + prop.path}
+  //           component={prop.component}
+  //           key={key}
+  //         />
+  //       );
+  //     } else {
+  //       return null;
+  //     }
+  //   });
+  // };
 
   return (
     <>
@@ -57,10 +57,7 @@ const Auth = (props) => {
         <div style={myStyle}>
           <Container className="">
             <Row className="justify-content-center pt-5">
-              <Switch>
-                {getRoutes(routes)}
-                <Redirect from="*" to="/auth/login" />
-              </Switch>
+              <Outlet />
             </Row>
           </Container>
         </div>
